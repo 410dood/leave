@@ -1,8 +1,8 @@
 describe("Django REST framework / React quickstart app", () => {
   const lead = {
-    name: "name",
+    name: "Armin",
     email: "some-email@gmail.com",
-    message: "I am looking for Mom! Where is he"
+    message: "I am looking for a React tutor"
   };
 
   before(() => {
