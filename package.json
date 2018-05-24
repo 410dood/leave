@@ -7,7 +7,12 @@
     "flush": "pipenv run python ./project/manage.py flush --no-input",
     "e2e": "cypress open --project ./project/frontend/",
     "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js"
+    "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": "^8.9.4",
+    "npm": "^5.6.4"
   },
   "repository": {
     "type": "git",
@@ -20,7 +25,7 @@
     "url": "https://github.com/valentinogagliardi/django-drf-react-quickstart/issues"
   },
   "homepage": "https://github.com/valentinogagliardi/django-drf-react-quickstart#readme",
-  "devDependencies": {
+  "Dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
