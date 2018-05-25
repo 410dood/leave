@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['bdabrk-leave.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-  'sampleapp',
+  'leaveapp',
 
   'django.contrib.admin',
   'django.contrib.auth',
